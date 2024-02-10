@@ -1,0 +1,27 @@
+@include media-breakpoint-down(sm) {
+  .hidden--sm-down {
+    display: none !important;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .hidden--md-down {
+    display: none !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .hidden--lg-up {
+    display: none !important;
+  }
+}
+
+.hidden-element {
+  display: none;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

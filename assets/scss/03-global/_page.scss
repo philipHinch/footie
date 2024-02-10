@@ -1,0 +1,9 @@
+.page {
+  flex: 1;
+
+  &--error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,110 @@
+$font-family--base: 'Nunito', sans-serif;
+
+// font sizes
+$font-size--xxxl: 50px;
+$font-size--xxl: 40px;
+$font-size--xl: 34px;
+$font-size--lg: 24px;
+$font-size--md: 20px;
+$font-size--smd: 18px;
+$font-size--sm: 16px;
+$font-size--xs: 15px;
+$font-size--xxxs: 13px;
+
+// font line heights
+$line-height--xxxl: 50px * 1.1;
+$line-height--xxl: 40px * 1.1;
+$line-height--xl: 34px * 1.1;
+$line-height--lg: 24px * 1.1;
+$line-height--md: 20px * 1.1;
+$line-height--smd: 18px * 1.1;
+$line-height--sm: 16px * 1.1;
+$line-height--xs: 15px * 1.1;
+
+// font weights
+$font-weight--black: 900;
+$font-weight--bold: 700;
+$font-weight--regular: 400;
+$font-weight--light: 300;
+
+// font styles
+@mixin HeadingLgDesktop {
+  font-size: $font-size--xxxl;
+  line-height: $line-height--xxxl;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingLgMobile {
+  font-size: $font-size--xxl;
+  line-height: $line-height--xxl;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingMdDesktop {
+  font-size: $font-size--xxl;
+  line-height: $line-height--xxl;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingMdMobile {
+  font-size: $font-size--lg;
+  line-height: $line-height--lg;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingSmDesktop {
+  font-size: $font-size--xl;
+  line-height: $line-height--xl;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingSmMobile {
+  font-size: $font-size--md;
+  line-height: $line-height--md;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingXsDesktop {
+  font-size: $font-size--lg;
+  line-height: $line-height--lg;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingXsMobile {
+  font-size: $font-size--smd;
+  line-height: $line-height--smd;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingXxsDesktop {
+  font-size: $font-size--smd;
+  line-height: $line-height--smd;
+  font-weight: $font-weight--bold;
+}
+
+@mixin HeadingSm {
+  font-size: $font-size--sm;
+  line-height: $line-height--sm;
+  font-weight: $font-weight--bold;
+}
+
+@mixin Heading5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: $font-weight--bold;
+}
+
+@mixin BodyTextLg {
+  font-size: $font-size--md;
+  line-height: $line-height--md;
+}
+
+@mixin BodyTextMd {
+  font-size: $font-size--smd;
+  line-height: $line-height--smd;
+}
+
+@mixin BodyText {
+  font-size: $font-size--sm;
+  line-height: $line-height--md;
+}

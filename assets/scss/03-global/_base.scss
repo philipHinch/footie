@@ -1,0 +1,84 @@
+html,
+body {
+  font-family: $font-family--base;
+  font-weight: $font-weight--regular;
+  font-size: $font-size--sm;
+  overflow: hidden;
+  overflow-y: visible;
+  color: $text--black;
+  min-height: 100vh;
+  background: $bg--white;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 $space--md;
+  max-width: $container-width--default;
+
+  &--awkward {
+    max-width: $cotnainer-width--awkward;
+  }
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@include media-breakpoint-down(md) {
+  .text-center-md-down {
+    text-align: center;
+  }
+}
+
+.bg--white {
+  background: $bg--white;
+}
+
+.bg--grey {
+  background: $bg--grey;
+}
+
+.bg--pale-blue {
+  background: rgba(135, 220, 220, 0.1);
+}
+
+.bg--teal {
+  background: $bg--teal;
+
+  .heading {
+    color: $text--white;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  animation: spin 2s linear forwards infinite;
+}

@@ -1,0 +1,92 @@
+@mixin rte-styling {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  ol,
+  ul,
+  p {
+    display: block;
+  }
+
+  h1 {
+    @include DesktopH1;
+  }
+
+  h2 {
+    @include DesktopH2;
+  }
+
+  h3 {
+    @include DesktopH3;
+  }
+
+  h4 {
+    @include DesktopH4;
+  }
+
+  h5 {
+    @include DesktopH5;
+  }
+
+  h6 {
+    @include DesktopH6;
+  }
+
+  p {
+    @include BodyCopyMd;
+
+    font-weight: 400;
+  }
+
+  strong {
+    font-weight: $font-weight--bold;
+  }
+
+  ul,
+  ol,
+  li {
+    margin-left: $space--xxs;
+  }
+
+  ul,
+  ol {
+    margin-top: $space--xs;
+  }
+
+  ul {
+    list-style: disc;
+
+    li {
+      &::marker {
+        color: $primary;
+      }
+    }
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  .text--underline {
+    text-decoration: underline $primary;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+    color: $primary;
+
+    &:hover {
+      text-decoration: underline $primary;
+    }
+  }
+
+  hr {
+    border-top: 1px solid $border--dark;
+  }
+}
